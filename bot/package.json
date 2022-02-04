@@ -1,0 +1,29 @@
+{
+  "name": "Asaka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "canvacord": "^5.2.3",
+    "concurrently": "^7.0.0",
+    "discord-player": "^5.2.0",
+    "discord-xp": "^1.1.16",
+    "discord.js": "^13.6.0",
+    "dotenv": "^12.0.3",
+    "ffmpeg-static": "^4.4.1",
+    "mongoose": "^6.1.6",
+    "socket.io-client": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "prestart:dev": "npm run build",
+    "dev": "tsc && concurrently \"tsc -w\" \"nodemon dist/index.js\"",
+    "start": "node ./build/index.js",
+    "build": "tsc"
+  }
+}
