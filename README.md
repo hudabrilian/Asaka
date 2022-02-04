@@ -4,6 +4,8 @@ Asaka discord bot
 
 ` Dashboard built with React, tailwindcss`
 
+` Backend built with NodeJS `
+
 ` Database using MongoDB`
 
 # Dashboard Screenshot
